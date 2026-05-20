@@ -23,7 +23,6 @@ This project builds an intelligent medical Q&A chatbot that:
 | Vector Store | Pinecone |
 | RAG Framework | LangChain + langchain-classic |
 | PDF Loader | LangChain `PyPDFLoader` |
-| Frontend / API | FastAPI |
 | Environment | Python 3.11, virtualenv |
 
 ---
@@ -36,21 +35,6 @@ This project builds an intelligent medical Q&A chatbot that:
 - **Groq** — [https://console.groq.com](https://console.groq.com)
 
 ---
-
-## 🚀 How It Works
-
-```
-User Question
-     ↓
-Embed query using HuggingFace
-     ↓
-Similarity search in Pinecone (top 3 chunks)
-     ↓
-Retrieved context + question → Groq LLM
-     ↓
-Answer returned via FastAPI
-```
-
 ---
 
 ## 📝 License
